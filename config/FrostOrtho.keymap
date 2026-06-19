@@ -18,7 +18,14 @@
 &mkp_input_listener { input-processors = <&zip_temp_layer 6 10000>; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ESCAP {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
