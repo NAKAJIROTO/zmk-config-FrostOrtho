@@ -25,6 +25,26 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        RIGHT1 {
+            bindings = <&kp RIGHT>;
+            key-positions = <17 8>;
+        };
+
+        BS {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 7>;
+        };
+
+        KANA {
+            bindings = <&kp A>;
+            key-positions = <3 4>;
+        };
+
+        CAPS1 {
+            bindings = <&kp CAPS>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
@@ -35,17 +55,18 @@
             label = "TO_LAYER_0";
         };
 
-        screenshot: screenshot {
+        OO: OO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&to 7>,
-                <&macro_press>,
-                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>,
-                <&macro_release>,
-                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
+            bindings = <&kp KP_NUMBER_0 &kp NUMBER_0>;
+            label = "OO";
+        };
 
-            label = "SCREENSHOT";
+        ENTENT: ENTENT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER>;
+            label = "ENTENT";
         };
     };
 
