@@ -58,12 +58,12 @@
             layers = <1>;
         };
 
-        MB1 {
+        MBB1 {
             bindings = <&mkp MB1>;
             key-positions = <16 17>;
         };
 
-        MB2 {
+        MBB2 {
             bindings = <&mkp MB2>;
             key-positions = <17 18>;
         };
