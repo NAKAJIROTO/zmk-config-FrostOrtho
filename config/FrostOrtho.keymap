@@ -37,7 +37,7 @@
         };
 
         KANA {
-            bindings = <&kp A>;
+            bindings = <&kp LA(GRAVE)>;
             key-positions = <3 4>;
         };
 
