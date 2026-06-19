@@ -54,17 +54,6 @@
             layers = <0>;
         };
 
-        MO0 {
-            bindings = <&to 0>;
-            key-positions = <5 6>;
-            layers = <1>;
-        };
-
-        MB1 {
-            bindings = <&mkp MB1>;
-            key-positions = <16 17>;
-        };
-
         MB2 {
             bindings = <&mkp MB2>;
             key-positions = <17 18>;
