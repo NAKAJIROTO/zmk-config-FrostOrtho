@@ -149,7 +149,7 @@
             bindings = <
 &kp AT_SIGN  &kp UNDERSCORE  &kp EXCLAMATION    &kp QUESTION          &kp LS(DOLLAR)                     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
 &kp PERCENT  &kp AMPERSAND   &kp HASH           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS              &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&kp TILDE    &kp SQT         &kp DOUBLE_QUOTES  &kp N3                &kp PERIOD                         &kp F11  &kp F12  &trans  &trans  &trans
+&kp TILDE    &kp SQT         &kp DOUBLE_QUOTES  &kp N3                &studio_unlock                         &kp F11  &kp F12  &trans  &trans  &trans
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
