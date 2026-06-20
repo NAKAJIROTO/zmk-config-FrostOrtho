@@ -62,11 +62,9 @@
             key-positions = <17 16>;
         };
 
-
-
-        MOO5 {
-            bindings = <&mo 5>;
-            key-positions = <9 8>;
+        MBB2 {
+            bindings = <&rclk_layer5 5 MB2>;
+            key-positions = <17 18>;
         };
     };
 
@@ -123,17 +121,15 @@
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
 
-rclk_layer5: rclk_layer5 {
-    compatible = "zmk,behavior-hold-tap";
-    label = "RCLK_LAYER5";
-
-    #binding-cells = <2>;
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <175>;
-
-    bindings = <&mo>, <&mkp>;
-};
+        rclk_layer5: rclk_layer5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RCLK_LAYER5";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&mkp>;
+        };
     };
 
     keymap {
