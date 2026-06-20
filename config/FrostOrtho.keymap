@@ -126,17 +126,17 @@ behaviors {
         bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
     };
 
-    rclk_layer5: rclk_layer5 {
-        compatible = "zmk,behavior-hold-tap";
-        label = "RCLK_LAYER5";
-        #binding-cells = <2>;
+rclk_layer5: rclk_layer5 {
+    compatible = "zmk,behavior-hold-tap";
+    label = "RCLK_LAYER5";
 
-        tapping-term-ms = <200>;
-        quick-tap-ms = <175>;
-        flavor = "balanced";
+    #binding-cells = <2>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
 
-        bindings = <&mo 5>, <&mkp RCLK>;
-    };
+    bindings = <&mo>, <&mkp>;
+};
 };
 
 
