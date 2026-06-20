@@ -125,6 +125,19 @@
             tap-ms = <20>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
+       rclk_layer5: rclk_layer5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RCLK_LAYER5";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+
+            bindings = <
+                &mo 5      /* 長押し → レイヤー5 */
+                &mkp RCLK  /* 短押し → 右クリック */
+            >;
+         };
     };
 
     keymap {
