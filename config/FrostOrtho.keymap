@@ -139,7 +139,7 @@
             >;
          };
     };
-
+    };
     keymap {
         compatible = "zmk,keymap";
 
