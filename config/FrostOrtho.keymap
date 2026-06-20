@@ -59,12 +59,17 @@
 
         MBB1 {
             bindings = <&mkp MB1>;
-            key-positions = <16 25>;
+            key-positions = <17 26>;
         };
 
         MBB2 {
             bindings = <&mkp MB2>;
-            key-positions = <17 26>;
+            key-positions = <18 27>;
+        };
+
+        MOO5 {
+            bindings = <&mo 5>;
+            key-positions = <9 8>;
         };
     };
 
@@ -127,7 +132,7 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R               &kp T                         &kp Y        &kp U        &mo 4      &mo 5       &mo 6
+&kp Q           &kp W         &kp E         &kp R               &kp T                         &kp Y        &kp U        &kp E      &kp O       &kp P
 &kp A           &kp S         &kp D         &kp F               &kp G                         &kp H        &kp J        &kp K      &kp L       &mo 7
 &kp Z           &kp X         &kp C         &kp V               &kp B                         &kp N        &kp M        &kp COMMA  &kp KP_DOT  &lt 7 SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LEFT_CONTROL  &lt 2 SPACE  &lt 1 ENTER      &lt 4 ENTER  &lt 1 ENTER  &trans     &kp TAB     &kp LS(TAB)
