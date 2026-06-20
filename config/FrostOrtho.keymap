@@ -62,10 +62,7 @@
             key-positions = <17 16>;
         };
 
-        MBB2 {
-            bindings = <&rclk_layer5 5 MB2>;
-            key-positions = <18 17>;
-        };
+
 
         MOO5 {
             bindings = <&mo 5>;
