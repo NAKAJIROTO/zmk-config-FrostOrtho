@@ -107,6 +107,12 @@
             bindings = <&kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER>;
             label = "ENTENT";
         };
+        sum: sum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(S)) &kp U &kp M>;
+            label = "SUM";
+        };
     };
 
     behaviors {
@@ -175,7 +181,7 @@
 
         layer_3 {
             bindings = <
-&trans  &kp PSCRN    &trans  &trans  &kp HOME              &trans  &trans  &trans  &trans  &trans
+&sum    &kp PSCRN    &trans  &trans  &kp HOME              &trans  &trans  &trans  &trans  &trans
 &trans  &screenshot  &trans  &trans  &kp END               &trans  &trans  &trans  &trans  &trans
 &trans  &trans       &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans
 &trans  &trans       &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans
