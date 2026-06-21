@@ -60,6 +60,7 @@
             &zip_temp_layer 6 100000
             &zip_xy_scaler 1 3
             &zip_xy_transform (INPUT_TRANSFORM_X_INVERT)
+  	        &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
         >;
 
         // レイヤー5 スクロール
@@ -68,7 +69,7 @@
 
             input-processors = <
                 &zip_xy_transform (INPUT_TRANSFORM_X_INVERT)
-                &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
+
                 &zip_xy_to_scroll_mapper
                 &zip_scroll_scaler 1 8
             >;
