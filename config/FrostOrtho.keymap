@@ -132,8 +132,7 @@
             #sensor-binding-cells = <0>;
             tap-ms = <20>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-    // 回転あたりの感度を下げる
-    sensor-resolution = <8>;
+
         };
 
 
