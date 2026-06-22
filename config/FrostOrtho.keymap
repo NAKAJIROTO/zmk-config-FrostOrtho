@@ -156,8 +156,7 @@
             >;
 
 sensor-bindings = <
-    &msc SCRL_UP
-    &msc SCRL_DOWN
+    &inc_dec_kp PG_UP PG_DN
 >;
         };
 
@@ -170,8 +169,7 @@ sensor-bindings = <
             >;
 
 sensor-bindings = <
-    &msc SCRL_UP
-    &msc SCRL_DOWN
+    &inc_dec_kp PG_UP PG_DN
 >;
         };
 
@@ -184,8 +182,7 @@ sensor-bindings = <
             >;
 
 sensor-bindings = <
-    &msc SCRL_UP
-    &msc SCRL_DOWN
+    &inc_dec_kp PG_UP PG_DN
 >;
         };
 
@@ -198,8 +195,7 @@ sensor-bindings = <
             >;
 
 sensor-bindings = <
-    &msc SCRL_UP
-    &msc SCRL_DOWN
+    &inc_dec_kp PG_UP PG_DN
 >;
         };
 
@@ -212,8 +208,7 @@ sensor-bindings = <
             >;
 
 sensor-bindings = <
-    &msc SCRL_UP
-    &msc SCRL_DOWN
+    &inc_dec_kp PG_UP PG_DN
 >;
         };
 
@@ -224,9 +219,9 @@ sensor-bindings = <
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
+
 sensor-bindings = <
-    &msc SCRL_UP
-    &msc SCRL_DOWN
+    &inc_dec_kp PG_UP PG_DN
 >;
         };
 
@@ -238,8 +233,7 @@ sensor-bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 sensor-bindings = <
-    &msc SCRL_UP
-    &msc SCRL_DOWN
+    &inc_dec_kp PG_UP PG_DN
 >;
         };
 
@@ -252,7 +246,8 @@ sensor-bindings = <
             >;
 
 sensor-bindings = <
-    &msc SCRL_UP
+    &inc_dec_kp PG_UP PG_DN
+>;
     &msc SCRL_DOWN
 >;
         };
