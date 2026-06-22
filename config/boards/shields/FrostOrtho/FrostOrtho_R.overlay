@@ -70,7 +70,7 @@ trackball_listener: trackball_listener {
         input-processors = <
             &zip_xy_to_scroll_mapper
             &zip_scroll_x_scaler 0 1
-            &zip_scroll_y_scaler 12 1
+            &zip_scroll_y_scaler 1 1
         >;
     };
 };
