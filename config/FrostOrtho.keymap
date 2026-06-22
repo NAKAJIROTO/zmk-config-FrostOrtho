@@ -132,8 +132,8 @@ scroll_up_down: scroll_up_down {
     tap-ms = <80>;
 
     bindings = <
-        &msc SCRL_UP 1
-        &msc SCRL_DOWN 1
+        &msc SCRL_UP
+        &msc SCRL_DOWN
     >;
 };
 
