@@ -155,7 +155,10 @@
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL DOWN  &lt 2 SPACE  &lt 1 ENTER      &lt 1 DOWN  &lt 2 ENTER  &lt 3 LC(BACKSPACE)  &kp TAB       &kp LS(TAB)
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+sensor-bindings = <
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+>;
         };
 
         layer_1 {
@@ -166,7 +169,10 @@
 &trans     &trans            &trans     &lt 4 DOWN    &trans                &trans      &lt 5 DOWN       &trans           &trans           &trans           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+sensor-bindings = <
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+>;
         };
 
         layer_2 {
@@ -177,7 +183,10 @@
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+sensor-bindings = <
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+>;
         };
 
         layer_3 {
@@ -188,7 +197,10 @@
 &trans  &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+sensor-bindings = <
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+>;
         };
 
         layer_4 {
@@ -199,7 +211,10 @@
 &bootloader  &trans  &trans  &trans  &trans  &trans      &trans          &trans          &trans        &trans        &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+sensor-bindings = <
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+>;
         };
 
         layer_5 {
@@ -209,8 +224,10 @@
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+sensor-bindings = <
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+>;
         };
 
         MOUSE {
@@ -220,8 +237,10 @@
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+sensor-bindings = <
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+>;
         };
 
         layer_7 {
@@ -232,7 +251,10 @@
 &trans     &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+sensor-bindings = <
+    &msc SCRL_UP
+    &msc SCRL_DOWN
+>;
         };
     };
 };
