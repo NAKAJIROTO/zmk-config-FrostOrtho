@@ -4,9 +4,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #define MOUSE 6
-
+// #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -131,7 +131,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
             // 追加: スクロールのタップ時間を設定 (20ms)
- triggers-per-rotation = <36>;
+
         };
 
         rclk_layer5: rclk_layer5 {
