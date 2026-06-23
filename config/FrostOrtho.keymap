@@ -109,7 +109,7 @@
 &kp Z           &kp X         &kp C              &kp V                       &kp B                         &kp N       &kp M        &kp COLON            &kp COMMA  &kp KP_DOT
 &kp LEFT_SHIFT  &kp LEFT_WIN  &mt LEFT_ALT DOWN  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 1 ENTER      &lt 1 DOWN  &lt 2 ENTER  &lt 4 LC(BACKSPACE)  &kp TAB    &kp LS(TAB)
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_1 {
@@ -119,7 +119,7 @@
 &kp LC(F)  &kp LG(NUMBER_1)  &kp LC(C)  &kp LC(V)     &kp LC(APOS)                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COLON        &kp SEMI
 &trans     &trans            &trans     &lt 4 DOWN    &trans                &trans      &lt 5 DOWN       &trans           &trans           &trans           &trans
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_2 {
@@ -129,7 +129,7 @@
 &kp TILDE    &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                  &kp F11  &kp F12  &trans  &trans  &trans
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_3 {
@@ -139,7 +139,7 @@
 &trans  &trans       &trans  &trans         &trans                &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans  &trans  &trans
 &trans  &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_4 {
@@ -149,7 +149,7 @@
 &trans       &trans  &trans  &trans  &trans              &studio_unlock  &kp KP_NUMLOCK  &trans        &trans        &bt BT_CLR
 &bootloader  &trans  &trans  &trans  &trans  &trans      &trans          &trans          &trans        &trans        &bt BT_CLR_ALL
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_5 {
@@ -159,7 +159,7 @@
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         MOUSE {
@@ -169,7 +169,7 @@
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
     };
 };
