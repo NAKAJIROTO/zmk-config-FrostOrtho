@@ -162,7 +162,7 @@ scroll_up_down: scroll_up_down {
 &kp LEFT_SHIFT  &kp LEFT_WIN  &mt LEFT_ALT DOWN  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 1 ENTER      &lt 1 DOWN  &lt 2 ENTER  &lt 4 LC(BACKSPACE)  &kp TAB    &kp LS(TAB)
             >;
 
-sensor-bindings = <&scroll_up_down>;
+    sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 
         };
 
@@ -174,7 +174,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans     &trans            &trans     &lt 4 DOWN    &trans                &trans      &lt 5 DOWN       &trans           &trans           &trans           &trans
             >;
 
-    sensor-bindings = <&scroll_up_down>;
+    sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_2 {
@@ -185,7 +185,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+    sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 
         };
 
@@ -197,7 +197,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans  &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+    sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_4 {
@@ -208,7 +208,7 @@ sensor-bindings = <&scroll_up_down>;
 &bootloader  &trans  &trans  &trans  &trans  &trans      &trans          &trans          &trans        &trans        &bt BT_CLR_ALL
             >;
 
-sensor-bindings = <&scroll_up_down>;
+    sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_5 {
@@ -219,7 +219,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+    sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         MOUSE {
@@ -230,7 +230,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+    sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_7 {
@@ -240,7 +240,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans     &screenshot  &kp LC(INS)  &kp LS(INS)  &trans              &trans  &trans  &trans  &trans  &trans
 &trans     &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
-sensor-bindings = <&scroll_up_down>;
+    sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
