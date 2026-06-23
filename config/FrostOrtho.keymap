@@ -1,18 +1,20 @@
 #include <input/processors.dtsi>
+#include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <behaviors/runtime-sensor-rotate.dtsi>
 
 #define MOUSE 6
-
 
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
 };
 
-
+// AML クリックしたときにタイムアウトを延長
+&mkp_input_listener { input-processors = <&zip_temp_layer 6 10000>; };
 
 / {
     combos {
