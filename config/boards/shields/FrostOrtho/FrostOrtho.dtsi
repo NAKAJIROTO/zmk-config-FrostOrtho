@@ -95,6 +95,7 @@ sensors: sensors {
     sensors = <&left_encoder>;
     triggers-per-rotation = <24>;
 };
+};
 
 
 
