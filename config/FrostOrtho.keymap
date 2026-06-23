@@ -127,13 +127,12 @@
             tapping-term-ms = <300>;
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            // 追加: スクロールのタップ時間を設定 (20ms)
-            tap-ms = <20>;
-        };
+scroll_up_down: behavior_sensor_rotate_page_up_down {
+    compatible = "zmk,behavior-sensor-rotate";
+    #sensor-binding-cells = <0>;
+    bindings = <&kp PAGE_UP>, <&kp PAGE_DOWN>;
+    tap-ms = <20>;
+};
         vol_up_down: vol_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -163,7 +162,7 @@
 &kp LEFT_SHIFT  &kp LEFT_WIN  &mt LEFT_ALT DOWN  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 1 ENTER      &lt 1 ENTER  &lt 2 DOWN  &lt 4 LC(BACKSPACE)  &kp TAB    &kp LS(TAB)
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
         };
 
         layer_1 {
@@ -174,7 +173,7 @@
 &trans     &trans            &trans     &lt 4 DOWN    &trans                &trans      &lt 5 DOWN       &trans           &trans           &trans           &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
         };
 
         layer_2 {
@@ -185,7 +184,7 @@
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
         };
 
         layer_3 {
