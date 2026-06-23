@@ -161,7 +161,9 @@ scroll_up_down: scroll_up_down {
 &kp Z           &kp X         &kp C              &kp V                       &kp B                         &kp N       &kp M        &kp COLON            &kp COMMA  &kp KP_DOT
 &kp LEFT_SHIFT  &kp LEFT_WIN  &mt LEFT_ALT DOWN  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 1 ENTER      &lt 1 DOWN  &lt 2 ENTER  &lt 4 LC(BACKSPACE)  &kp TAB    &kp LS(TAB)
             >;
-    sensor-bindings = <&scroll_up_down>;
+
+sensor-bindings = <&scroll_up_down>;
+
         };
 
         layer_1 {
@@ -183,7 +185,7 @@ scroll_up_down: scroll_up_down {
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
-    sensor-bindings = <&scroll_up_down>;
+sensor-bindings = <&scroll_up_down>;
 
         };
 
@@ -195,7 +197,7 @@ scroll_up_down: scroll_up_down {
 &trans  &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
 
-    sensor-bindings = <&scroll_up_down>;
+sensor-bindings = <&scroll_up_down>;
         };
 
         layer_4 {
@@ -206,7 +208,7 @@ scroll_up_down: scroll_up_down {
 &bootloader  &trans  &trans  &trans  &trans  &trans      &trans          &trans          &trans        &trans        &bt BT_CLR_ALL
             >;
 
-    sensor-bindings = <&scroll_up_down>;
+sensor-bindings = <&scroll_up_down>;
         };
 
         layer_5 {
@@ -217,7 +219,7 @@ scroll_up_down: scroll_up_down {
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-    sensor-bindings = <&scroll_up_down>;
+sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -228,7 +230,7 @@ scroll_up_down: scroll_up_down {
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-    sensor-bindings = <&scroll_up_down>;
+sensor-bindings = <&scroll_up_down>;
         };
 
         layer_7 {
@@ -238,7 +240,7 @@ scroll_up_down: scroll_up_down {
 &trans     &screenshot  &kp LC(INS)  &kp LS(INS)  &trans              &trans  &trans  &trans  &trans  &trans
 &trans     &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
-    sensor-bindings = <&scroll_up_down>;
+sensor-bindings = <&scroll_up_down>;
         };
     };
 };
