@@ -128,12 +128,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
         };
-
-scroll_up_down: scroll_up_down {
-    compatible = "zmk,behavior-sensor-rotate";
-    #sensor-binding-cells = <0>;
-    bindings = <&msc SCRL_UP 3>, <&msc SCRL_DOWN 3>;
-};
+        // Kyemap Editor用
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <20>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
         vol_up_down: vol_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -160,7 +161,7 @@ scroll_up_down: scroll_up_down {
 &kp Z           &kp X         &kp C              &kp V                       &kp B                         &kp N       &kp M        &kp COLON            &kp COMMA  &kp KP_DOT
 &kp LEFT_SHIFT  &kp LEFT_WIN  &mt LEFT_ALT DOWN  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 1 ENTER      &lt 1 DOWN  &lt 2 ENTER  &lt 4 LC(BACKSPACE)  &kp TAB    &kp LS(TAB)
             >;
-    sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_1 {
@@ -171,7 +172,7 @@ scroll_up_down: scroll_up_down {
 &trans     &trans            &trans     &lt 4 DOWN    &trans                &trans      &lt 5 DOWN       &trans           &trans           &trans           &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_2 {
@@ -182,7 +183,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
 
         };
 
@@ -194,7 +195,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans  &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_4 {
@@ -205,7 +206,7 @@ sensor-bindings = <&scroll_up_down>;
 &bootloader  &trans  &trans  &trans  &trans  &trans      &trans          &trans          &trans        &trans        &bt BT_CLR_ALL
             >;
 
-sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_5 {
@@ -216,7 +217,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         MOUSE {
@@ -227,7 +228,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_7 {
@@ -237,7 +238,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans     &screenshot  &kp LC(INS)  &kp LS(INS)  &trans              &trans  &trans  &trans  &trans  &trans
 &trans     &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
-sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
     };
 };
