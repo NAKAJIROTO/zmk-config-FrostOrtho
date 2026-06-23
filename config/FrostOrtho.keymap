@@ -127,23 +127,25 @@
             tapping-term-ms = <300>;
         };
 
-        // Kyemap Editor用
-
-scroll_up_down: scroll_up_down {
-    compatible = "zmk,behavior-sensor-rotate";
-    #sensor-binding-cells = <0>;
-    bindings = <&msc SCRL_UP &msc SCRL_DOWN>;
-    tap-ms = <20>;
-};
-
-        scroll_move_y: sensor_rotate_msc_for_move_y {
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(20)>, <&msc MOVE_Y(-20)>;
-
-            // tap-ms下限メモ Yの値で可変: Y(15) <81>, Y(20) <65>, Y(25) <49>
-
-            tap-ms = <65>;
+            tap-ms = <20>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+        vol_up_down: vol_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <5>;
+            bindings = <&kp C_VOL_DN>, <&kp C_VOL_UP>;
+        };
+        // DYA Studio用
+        rsr_vol: rsr_vol {
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <5>;
+            cw-binding = <&kp C_VOL_DN>;
+            ccw-binding = <&kp C_VOL_UP>;
         };
     };
 
@@ -157,8 +159,7 @@ scroll_up_down: scroll_up_down {
 &kp Z           &kp X         &kp C              &kp V                       &kp B                         &kp N       &kp M        &kp COLON            &kp COMMA  &kp KP_DOT
 &kp LEFT_SHIFT  &kp LEFT_WIN  &mt LEFT_ALT DOWN  &mt LEFT_CONTROL BACKSPACE  &lt 2 SPACE  &lt 1 ENTER      &lt 1 DOWN  &lt 2 ENTER  &lt 4 LC(BACKSPACE)  &kp TAB    &kp LS(TAB)
             >;
-
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_1 {
@@ -169,7 +170,7 @@ scroll_up_down: scroll_up_down {
 &trans     &trans            &trans     &lt 4 DOWN    &trans                &trans      &lt 5 DOWN       &trans           &trans           &trans           &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_2 {
@@ -180,7 +181,7 @@ scroll_up_down: scroll_up_down {
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_3 {
@@ -191,7 +192,7 @@ scroll_up_down: scroll_up_down {
 &trans  &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_4 {
@@ -202,7 +203,7 @@ scroll_up_down: scroll_up_down {
 &bootloader  &trans  &trans  &trans  &trans  &trans      &trans          &trans          &trans        &trans        &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_5 {
@@ -213,7 +214,7 @@ scroll_up_down: scroll_up_down {
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         MOUSE {
@@ -224,7 +225,7 @@ scroll_up_down: scroll_up_down {
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         layer_7 {
@@ -235,7 +236,7 @@ scroll_up_down: scroll_up_down {
 &trans     &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
     };
 };
