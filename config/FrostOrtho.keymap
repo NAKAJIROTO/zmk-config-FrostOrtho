@@ -234,3 +234,6 @@ scroll_up_down: page_up_down {
         };
     };
 };
+&left_encoder {
+    status = "okay";
+};
