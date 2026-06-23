@@ -170,7 +170,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans     &trans            &trans     &lt 4 DOWN    &trans                &trans      &lt 5 DOWN       &trans           &trans           &trans           &trans
             >;
 
-sensor-bindings = <&scroll_up_down>;
+sensor-bindings = <&msc SCRL_UP &msc SCRL_DOWN>;
         };
 
         layer_2 {
