@@ -24,8 +24,7 @@
     require-prior-idle-ms = <400>;
     // AMLから離脱しないキー
     excluded-positions = <
-        1 // U 左クリック
-
+        35 // mo1
     >;
 };
 
