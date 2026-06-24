@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+
 #define ZMK_MOUSE_POINTING_SCRL_VAL 100
 #define MOUSE 6
 
@@ -127,15 +128,13 @@
             tapping-term-ms = <300>;
         };
 
-scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-    compatible = "zmk,behavior-sensor-rotate";
-    #sensor-binding-cells = <0>;
-    bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-    tap-ms = <20>;
-       };
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-
-
+            tap-ms = <20>;
+        };
 
         vol_up_down: vol_up_down {
             compatible = "zmk,behavior-sensor-rotate";
@@ -193,10 +192,10 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 
         layer_3 {
             bindings = <
-&sum    &kp PSCRN    &trans  &kp PAGE_UP    &kp HOME              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
-&trans  &screenshot  &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
-&trans  &trans       &trans  &trans         &trans                &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans  &trans  &trans
-&trans  &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
+&sum            &kp PSCRN    &trans  &kp PAGE_UP    &kp HOME              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
+&trans          &screenshot  &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
+&kp KP_NUMLOCK  &trans       &trans  &trans         &trans                &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans  &trans  &trans
+&trans          &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
