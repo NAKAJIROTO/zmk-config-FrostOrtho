@@ -9,6 +9,14 @@
 #define ZMK_MOUSE_POINTING_SCRL_VAL 100
 #define MOUSE 6
 
+
+&zip_temp_layer {
+    excluded-positions = <
+        1 // J
+ 
+    >;
+};
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
