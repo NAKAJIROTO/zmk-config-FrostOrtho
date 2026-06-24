@@ -73,6 +73,11 @@
             bindings = <&kp DEL>;
             key-positions = <13 2>;
         };
+
+        aaa {
+            bindings = <&kp A>;
+            key-positions = <27 28>;
+        };
     };
 
     macros {
