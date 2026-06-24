@@ -53,12 +53,13 @@
         device = <&trackball>;
 
         // input-processors = <&mouse_runtime_input_processor>;
-        input-processors = <
+input-processors = <
             &mouse_runtime_input_processor
-            &zip_temp_layer 6 1000 15  // 1000ms維持、15カウント以上の移動で起動
-            &zip_xy_scaler 1 2 // カーソル移動量2/3倍
-            &zip_xy_transform INPUT_TRANSFORM_X_INVERT // カーソルの移動方向調整
-            &zip_xy_transform INPUT_TRANSFORM_Y_INVERT // カーソルの移動方向調整
+            /* 引数は「6」と「1000」の2つだけにします */
+            &zip_temp_layer 6 1000
+            &zip_xy_scaler 1 2 
+            &zip_xy_transform INPUT_TRANSFORM_X_INVERT 
+            &zip_xy_transform INPUT_TRANSFORM_Y_INVERT 
         >;
     };
 };
