@@ -94,18 +94,7 @@
             label = "TO_LAYER_0";
         };
 
-        screenshot: screenshot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to 7>,
-                <&macro_press>,
-                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>,
-                <&macro_release>,
-                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
 
-            label = "SCREENSHOT";
-        };
 
         OO: OO {
             compatible = "zmk,behavior-macro";
@@ -204,7 +193,7 @@
         layer_3 {
             bindings = <
 &sum            &kp PSCRN    &trans  &kp PAGE_UP    &kp HOME              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
-&trans          &screenshot  &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
+&trans          &trans       &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
 &kp KP_NUMLOCK  &trans       &trans  &trans         &trans                &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans  &trans  &trans
 &trans          &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
