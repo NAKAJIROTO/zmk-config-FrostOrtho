@@ -127,3 +127,8 @@
         res-cpi = <1500>;
     };
 };
+
+&left_encoder {
+    status = "okay";
+};
+
