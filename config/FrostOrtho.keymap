@@ -9,8 +9,6 @@
 #define ZMK_MOUSE_POINTING_SCRL_VAL 100
 #define MOUSE 6
 
-
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -78,7 +76,7 @@
 
         aaa {
             bindings = <&kp A>;
-            key-positions = <27 28>;
+            key-positions = <27 35>;
         };
     };
 
