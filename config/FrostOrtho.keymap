@@ -60,12 +60,12 @@
 
         MBB1 {
             bindings = <&mkp MB1>;
-            key-positions = <17 16>;
+            key-positions = <6 7>;
         };
 
         MBB2 {
             bindings = <&mkp MB2>;
-            key-positions = <17 18>;
+            key-positions = <7 8>;
         };
 
         MOO5 {
