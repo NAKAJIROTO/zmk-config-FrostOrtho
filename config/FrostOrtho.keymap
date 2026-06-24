@@ -75,9 +75,7 @@
             key-positions = <13 2>;
         };
 
-
-
-        MB1 {
+        MBB1 {
             bindings = <&mkp LCLK>;
             key-positions = <17 16>;
         };
@@ -90,8 +88,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
-
 
         OO: OO {
             compatible = "zmk,behavior-macro";
@@ -189,10 +185,10 @@
 
         layer_3 {
             bindings = <
-&sum            &kp PSCRN    &trans  &kp PAGE_UP    &kp HOME              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
-&trans          &trans       &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
-&kp KP_NUMLOCK  &trans       &trans  &trans         &trans                &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans  &trans  &trans
-&trans          &trans       &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
+&sum            &kp PSCRN  &trans  &kp PAGE_UP    &kp HOME              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
+&trans          &trans     &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
+&kp KP_NUMLOCK  &trans     &trans  &trans         &trans                &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans  &trans  &trans
+&trans          &trans     &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -220,7 +216,7 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        layer_6  {
+        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans     &trans  &trans
