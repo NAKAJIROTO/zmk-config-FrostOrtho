@@ -17,12 +17,7 @@
 // AML クリックしたときにタイムアウトを延長
 //&mkp_input_listener { input-processors = <&zip_temp_layer 6 10000>; };
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 6 10000>;
-};
-
-
-
+&mkp_input_listener { input-processors = <&zip_temp_layer 6 10000>; };
 
 / {
     combos {
@@ -67,7 +62,7 @@
 
         MBB2 {
             bindings = <&mkp MB2>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
         };
 
         MOO5 {
@@ -83,6 +78,11 @@
         aaa {
             bindings = <&kp A>;
             key-positions = <27 35>;
+        };
+
+        MB1 {
+            bindings = <&mkp LCLK>;
+            key-positions = <17 16>;
         };
     };
 
@@ -236,10 +236,10 @@
 
         MOUSE {
             bindings = <
-&mkp LCLK  &trans  &trans  &trans  &trans              &trans  &trans  &trans     &trans  &trans
-&trans     &trans  &trans  &trans  &trans              &trans  &trans  &trans     &trans  &trans
-&trans     &trans  &trans  &trans  &trans              &trans  &trans  &mkp LCLK  &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &mkp LCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
