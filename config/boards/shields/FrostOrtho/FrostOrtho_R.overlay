@@ -20,11 +20,10 @@
 };
 
 &zip_temp_layer {
-    // キー入力後400ms以内はAMLに切り替わらない
-    require-prior-idle-ms = <400>;
-    // AMLから離脱しないキー
+    require-prior-idle-ms = <0>;
+
     excluded-positions = <
-        3
+        35
     >;
 };
 
