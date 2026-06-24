@@ -19,14 +19,13 @@
         ;
 };
 
-&zip_temp_layer {
-    /* 0 から 100 に変更（キータイピングから100ms間はAMLの発動を制限し、チャタリングを防ぐ） */
-    require-prior-idle-ms = <100>;
-
-    excluded-positions = <
-        35
-    >;
-};
+ // &zip_temp_layer {
+      /* 0 から 100 に変更（キータイピングから100ms間はAMLの発動を制限し、チャタリングを防ぐ） */
+ //     require-prior-idle-ms = <100>;
+ //     excluded-positions = <
+ //         35
+ //     >;
+ // };
 
 / {
     input_processors {
