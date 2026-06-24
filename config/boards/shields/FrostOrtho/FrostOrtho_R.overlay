@@ -24,7 +24,7 @@
     require-prior-idle-ms = <400>;
     // AMLから離脱しないキー
     excluded-positions = <
-        35 // mo1
+        3
     >;
 };
 
