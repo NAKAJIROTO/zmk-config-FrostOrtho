@@ -80,7 +80,7 @@
             key-positions = <17 16>;
         };
 
-        MBB2 {
+        MBB3 {
             bindings = <&mkp LCLK>;
             key-positions = <6 7>;
         };
