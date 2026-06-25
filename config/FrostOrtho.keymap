@@ -62,7 +62,7 @@
 
         MBB2 {
             bindings = <&mkp MB2>;
-            key-positions = <18 17>;
+            key-positions = <7 8>;
         };
 
         MOO5 {
@@ -76,11 +76,6 @@
         };
 
         MBB1 {
-            bindings = <&mkp LCLK>;
-            key-positions = <17 16>;
-        };
-
-        MBB3 {
             bindings = <&mkp LCLK>;
             key-positions = <6 7>;
         };
