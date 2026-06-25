@@ -79,6 +79,11 @@
             bindings = <&mkp LCLK>;
             key-positions = <17 16>;
         };
+
+        MBB2 {
+            bindings = <&mkp LCLK>;
+            key-positions = <6 7>;
+        };
     };
 
     macros {
