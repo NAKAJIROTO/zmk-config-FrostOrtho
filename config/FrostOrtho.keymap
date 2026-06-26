@@ -190,7 +190,7 @@
 
         layer_1 {
             bindings = <
-&kp JP_EQUAL  &kp PLUS          &kp MINUS  &kp ASTERISK     &kp JP_YEN              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp SLASH
+&kp JP_EQUAL  &kp JP_PLUS          &kp MINUS  &kp JP_ASTERISK     &kp JP_YEN              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp SLASH
 &ENTENT    &kp LEFT          &kp UP     &kp RIGHT        &kp F9                            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &OO              &trans
 &kp LC(F)  &kp LG(NUMBER_1)  &kp LC(C)  &kp LC(V)        &kp LC(APOS)                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COLON        &kp SEMI
 &trans     &trans            &trans     &lt 4 BACKSPACE  &trans                &trans      &lt 5 ENTER      &trans           &trans           &trans           &trans
@@ -203,7 +203,7 @@
             bindings = <
 &kp JP_AT  &kp JP_UNDERSCORE  &kp EXCLAMATION    &kp QUESTION          &kp LS(DOLLAR)                     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
 &kp PERCENT  &kp JP_AMPERSAND   &kp HASH           &kp JP_LPAREN  &kp JP_RPAREN              &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&kp JP_TILDE    &kp JP_QUOTE         &kp JP_DQUOTE  &kp JP_LBRACKET      &kp JP_RBRACKET                  &kp F11  &kp F12  &trans  &trans  &trans
+&kp JP_TILDE    &kp JP_QUOTE         &kp JP_DQUOTE  &kp JP_LBRACKET      &kp JP_RBRACKET                  &kp F11  &kp F12  &kp JP_COLON  &trans  &trans
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
@@ -212,7 +212,7 @@
 
         layer_3 {
             bindings = <
-&sum            &kp PSCRN  &trans  &kp PAGE_UP    &kp HOME              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
+&sum            &kp PSCRN  &trans  &kp PAGE_UP    &kp HOME              &kp JP_CARET  &kp JP_BACKQUOTE  &trans  &trans  &trans
 &trans          &trans     &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
 &kp KP_NUMLOCK  &trans     &trans  &trans         &trans                &kp JP_LBRACE  &kp JP_RBRACE    &trans  &trans  &trans
 &trans          &trans     &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
