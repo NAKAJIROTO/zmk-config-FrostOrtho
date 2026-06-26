@@ -22,12 +22,10 @@
 #define JP_YEN          NON_US_BSLH
 #define JP_PLUS         COLON
 #define JP_TILDE        PLUS
-#define JP_PIPE         LS(NON_US_HASH)
 #define JP_AT           LEFT_BRACKET
 #define JP_COLON        SINGLE_QUOTE
 #define JP_ASTERISK     DOUBLE_QUOTES
 #define JP_BACKQUOTE    LEFT_BRACE
-#define JP_UNDERSCORE   LS(NON_US_BSLH)
 #define JP_LBRACKET     RIGHT_BRACKET
 #define JP_RBRACKET     BACKSLASH
 #define JP_LPAREN       ASTERISK
@@ -204,11 +202,12 @@ KANA {
 
 layer_2 {
     bindings = <
-&kp JP_AT          &kp JP_UNDERSCORE  &kp EXCLAMATION  &kp QUESTION     &kp LS(DOLLAR)    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
-&kp PERCENT        &kp JP_AMPERSAND   &kp HASH         &kp JP_LPAREN    &kp JP_RPAREN     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-&kp JP_TILDE       &kp JP_QUOTE       &kp JP_DQUOTE    &kp JP_LBRACKET  &kp JP_RBRACKET   &kp F11  &kp F12  &trans   &trans   &trans
-&trans             &trans             &trans           &trans           &trans             &trans   &trans   &trans   &trans   &trans &trans
+&kp JP_AT      &kp LS(NON_US_BSLH)  &kp EXCLAMATION  &kp QUESTION   &kp LS(DOLLAR)   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5
+&kp PERCENT    &kp JP_AMPERSAND     &kp HASH         &kp JP_LPAREN  &kp JP_RPAREN    &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
+&kp JP_TILDE   &kp JP_QUOTE         &kp JP_DQUOTE    &kp JP_LBRACKET &kp JP_RBRACKET &kp F11 &kp F12 &trans &trans &trans
+&trans         &trans               &trans           &trans         &trans           &trans &trans &trans &trans &trans &trans
     >;
+};
 
     sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
 };
