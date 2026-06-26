@@ -14,27 +14,12 @@
  * JIS OS向け (物理US → Windows JIS)
  * ----------------------------- */
 
-#define JP_DQUOTE       AT
-#define JP_AMPERSAND    CARET
-#define JP_QUOTE        AMPERSAND
-#define JP_EQUAL        UNDER
-#define JP_CARET        EQUAL
-#define JP_YEN          NON_US_BSLH
-#define JP_PLUS         COLON
-#define JP_TILDE        PLUS
-#define JP_AT           LEFT_BRACKET
-#define JP_COLON        SINGLE_QUOTE
-#define JP_ASTERISK     DOUBLE_QUOTES
-#define JP_BACKQUOTE    LEFT_BRACE
-#define JP_LBRACKET     RIGHT_BRACKET
-#define JP_RBRACKET     BACKSLASH
-#define JP_LPAREN       ASTERISK
-#define JP_RPAREN       LEFT_PARENTHESIS
-#define JP_LBRACE       RIGHT_BRACE
-#define JP_RBRACE       PIPE
-#define JP_KANA         KANA
-#define JP_EISU         LANG2
-#define JP_HANZEN       GRAVE
+/* JIS OS向け (物理US → Windows JIS) */
+
+#define JP_YEN       NON_US_BSLH
+#define JP_KANA      KANA
+#define JP_EISU      LANG2
+#define JP_HANZEN    GRAVE
 
 
 &mt {
@@ -191,7 +176,7 @@ KANA {
 
         layer_1 {
             bindings = <
-&kp JP_EQUAL  &kp JP_PLUS  &kp MINUS  &kp JP_ASTERISK  &kp JP_YEN             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp SLASH
+&kp EQUAL  &kp COLON  &kp MINUS  &kp DQT  &kp JP_YEN            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp SLASH
 &ENTENT    &kp LEFT          &kp UP     &kp RIGHT        &kp F9                            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &OO              &trans
 &kp LC(F)  &kp LG(NUMBER_1)  &kp LC(C)  &kp LC(V)        &kp LC(APOS)                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COLON        &kp SEMI
 &trans     &trans            &trans     &lt 4 BACKSPACE  &trans                &trans      &lt 5 ENTER      &trans           &trans           &trans           &trans
@@ -202,25 +187,22 @@ KANA {
 
 layer_2 {
     bindings = <
-&kp JP_AT      &kp LS(NON_US_BSLH)  &kp EXCLAMATION  &kp QUESTION   &kp LS(DOLLAR)   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5
-&kp PERCENT    &kp JP_AMPERSAND     &kp HASH         &kp JP_LPAREN  &kp JP_RPAREN    &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-&kp JP_TILDE   &kp JP_QUOTE         &kp JP_DQUOTE    &kp JP_LBRACKET &kp JP_RBRACKET &kp F11 &kp F12 &trans &trans &trans
-&trans         &trans               &trans           &trans         &trans           &trans &trans &trans &trans &trans &trans
+&kp LBKT       &kp LS(NON_US_BSLH)  &kp EXCLAMATION  &kp QUESTION           &kp LS(DOLLAR)   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5
+&kp PERCENT    &kp CARET            &kp HASH         &kp ASTERISK           &kp LS(ASTERISK) &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
+&kp PLUS       &kp AMPERSAND        &kp AT           &kp RBKT               &kp BSLH         &kp F11 &kp F12 &trans &trans &trans
+&trans         &trans               &trans           &trans                 &trans           &trans &trans &trans &trans &trans &trans
     >;
-};
 
     sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
 };
 
 layer_3 {
     bindings = <
-&sum            &kp PSCRN  &trans  &kp PAGE_UP    &kp HOME          &kp JP_QUOTE    &kp JP_DQUOTE   &trans &trans &trans
-&trans          &trans     &trans  &kp PAGE_DOWN  &kp END           &kp LESS_THAN   &kp GREATER_THAN &trans &trans &trans
-&kp KP_NUMLOCK  &trans     &trans  &trans         &trans            &kp JP_LBRACE   &kp JP_RBRACE   &trans &trans &trans
-&trans          &trans     &trans  &trans         &trans            &trans          &trans          &trans &trans &trans &trans
+&sum            &kp PSCRN &trans &kp PAGE_UP   &kp HOME   &kp AMPERSAND &kp AT    &trans &trans &trans
+&trans          &trans    &trans &kp PAGE_DOWN &kp END    &kp LESS_THAN &kp GREATER_THAN &trans &trans &trans
+&kp KP_NUMLOCK  &trans    &trans &trans        &trans     &kp PIPE      &kp RBRC &trans &trans &trans
+&trans          &trans    &trans &trans        &trans     &trans        &trans   &trans &trans &trans &trans
     >;
-
-    sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
 };
 
         layer_4 {
