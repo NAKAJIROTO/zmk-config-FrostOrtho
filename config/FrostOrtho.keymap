@@ -1,6 +1,5 @@
 #include <input/processors.dtsi>
 #include <behaviors/runtime-sensor-rotate.dtsi>
-#include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -65,8 +64,8 @@
             key-positions = <16 7>;
         };
 
-        KANA {
-            bindings = <&kp LA(GRAVE)>;
+        KANACOMBO {
+            bindings = <&kp JP_KANA>;
             key-positions = <3 4>;
         };
 
@@ -190,7 +189,7 @@
 
         layer_1 {
             bindings = <
-&kp EQUAL  &kp PLUS          &kp MINUS  &kp ASTERISK     &kp NON_US_BACKSLASH              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp SLASH
+&kp EQUAL  &kp PLUS          &kp MINUS  &kp ASTERISK     &kp JP_YEN              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp SLASH
 &ENTENT    &kp LEFT          &kp UP     &kp RIGHT        &kp F9                            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &OO              &trans
 &kp LC(F)  &kp LG(NUMBER_1)  &kp LC(C)  &kp LC(V)        &kp LC(APOS)                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COLON        &kp SEMI
 &trans     &trans            &trans     &lt 4 BACKSPACE  &trans                &trans      &lt 5 ENTER      &trans           &trans           &trans           &trans
