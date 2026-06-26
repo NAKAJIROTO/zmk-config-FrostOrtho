@@ -94,35 +94,57 @@ KANA {
         };
     };
 
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
+macros {
+    to_layer_0: to_layer_0 {
+        compatible = "zmk,behavior-macro-one-param";
+        #binding-cells = <1>;
 
-        OO: OO {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_0 &kp NUMBER_0>;
-            label = "OO";
-        };
+        bindings =
+            <&to 0>,
+            <&macro_param_1to1>,
+            <&kp MACRO_PLACEHOLDER>;
 
-        ENTENT: ENTENT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER &kp ENTER>;
-            label = "ENTENT";
-        };
-
-        sum: sum {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LC(S)) &kp U &kp M>;
-            label = "SUM";
-        };
+        label = "TO_LAYER_0";
     };
+
+    OO: OO {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+
+        bindings =
+            <&kp KP_NUMBER_0>,
+            <&kp NUMBER_0>;
+
+        label = "OO";
+    };
+
+    ENTENT: ENTENT {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+
+        bindings =
+            <&kp ENTER>,
+            <&kp ENTER>,
+            <&kp ENTER>,
+            <&kp ENTER>,
+            <&kp ENTER>,
+            <&kp ENTER>,
+            <&kp ENTER>;
+
+        label = "ENTENT";
+    };
+
+sum: sum {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+
+    bindings =
+        <&kp LC(LALT(S))>,
+        <&kp U>,
+        <&kp M>;
+
+    label = "SUM";
+};
 
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
