@@ -65,7 +65,7 @@
         };
 
         KANACOMBO {
-            bindings = <&kp JP_KANA>;
+            bindings = <&kp JP_HANZEN>;
             key-positions = <3 4>;
         };
 
@@ -86,10 +86,6 @@
             layers = <1>;
         };
 
-        MBB2 {
-            bindings = <&mkp MB2>;
-            key-positions = <7 8>;
-        };
 
         MOO5 {
             bindings = <&mo 5>;
@@ -104,6 +100,11 @@
         MBB1 {
             bindings = <&mkp LCLK>;
             key-positions = <6 7>;
+        };
+
+        MBB2 {
+            bindings = <&mkp MB2>;
+            key-positions = <7 8>;
         };
     };
 
