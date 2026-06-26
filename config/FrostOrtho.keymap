@@ -201,9 +201,9 @@
 
         layer_2 {
             bindings = <
-&kp AT_SIGN  &kp UNDERSCORE  &kp EXCLAMATION    &kp QUESTION          &kp LS(DOLLAR)                     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&kp PERCENT  &kp AMPERSAND   &kp HASH           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS              &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&kp TILDE    &kp SQT         &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                  &kp F11  &kp F12  &trans  &trans  &trans
+&kp JP_AT  &kp JP_UNDERSCORE  &kp EXCLAMATION    &kp QUESTION          &kp LS(DOLLAR)                     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&kp PERCENT  &kp JP_AMPERSAND   &kp HASH           &kp JP_LPAREN  &kp JP_RPAREN              &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&kp JP_TILDE    &kp JP_QUOTE         &kp JP_DQUOTE  &kp JP_LBRACKET      &kp JP_RBRACKET                  &kp F11  &kp F12  &trans  &trans  &trans
 &trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
             >;
 
@@ -214,7 +214,7 @@
             bindings = <
 &sum            &kp PSCRN  &trans  &kp PAGE_UP    &kp HOME              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
 &trans          &trans     &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
-&kp KP_NUMLOCK  &trans     &trans  &trans         &trans                &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans  &trans  &trans
+&kp KP_NUMLOCK  &trans     &trans  &trans         &trans                &kp JP_LBRACE  &kp JP_RBRACE    &trans  &trans  &trans
 &trans          &trans     &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
             >;
 
