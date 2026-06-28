@@ -56,7 +56,7 @@
 input-processors = <
             &mouse_runtime_input_processor
             /* 引数は「6」と「1000」の2つだけにします */
-      // &zip_temp_layer 6 1600   // AML停止
+            &zip_temp_layer 6 1600   
             &zip_xy_scaler 4 5 
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT 
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT 
