@@ -28,11 +28,6 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
-
-
-
-
 #define ZMK_MOUSE_POINTING_SCRL_VAL 100
 #define MOUSE 6
 
@@ -75,18 +70,17 @@
             key-positions = <13 14>;
         };
 
-MO1 {
-    bindings = <&tog 1>;
-    key-positions = <5 6>;
-    layers = <0>;
-};
+        MO1 {
+            bindings = <&tog 1>;
+            key-positions = <5 6>;
+            layers = <0>;
+        };
 
-MO0 {
-    bindings = <&tog 1>;
-    key-positions = <5 6>;
-    layers = <1>;
-};
-
+        MO0 {
+            bindings = <&tog 1>;
+            key-positions = <5 6>;
+            layers = <1>;
+        };
 
         MOO5 {
             bindings = <&mo 5>;
@@ -105,7 +99,7 @@ MO0 {
 
         MBB2 {
             bindings = <&mkp MB2>;
-            key-positions = <7 8>;
+            key-positions = <27 26>;
         };
     };
 
@@ -138,21 +132,13 @@ MO0 {
             label = "SUM";
         };
 
-mb1_exit_aml: mb1_exit_aml {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
+        mb1_exit_aml: mb1_exit_aml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&macro_wait_time 30>, <&tog MOUSE>;
 
-    bindings = <
-        &mkp LCLK
-        &macro_wait_time 30
-        &tog MOUSE
-    >;
-
-    label = "MB1_EXIT_AML";
-};
-
-
-
+            label = "MB1_EXIT_AML";
+        };
     };
 
     behaviors {
@@ -207,10 +193,10 @@ mb1_exit_aml: mb1_exit_aml {
 
         layer_1 {
             bindings = <
-&kp JP_EQUAL  &kp JP_PLUS          &kp MINUS  &kp JP_ASTERISK     &kp JP_YEN              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp SLASH
-&ENTENT    &kp LEFT          &kp UP     &kp RIGHT        &kp F9                            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &OO              &trans
-&kp LC(F)  &kp LG(NUMBER_1)  &kp LC(C)  &kp LC(V)        &kp LC(APOS)                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COLON        &kp SEMI
-&trans     &trans            &trans     &lt 4 BACKSPACE  &trans                &trans      &lt 5 ENTER      &trans           &trans           &trans           &trans
+&kp JP_EQUAL  &kp JP_PLUS       &kp MINUS  &kp JP_ASTERISK  &kp JP_YEN                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp SLASH
+&ENTENT       &kp LEFT          &kp UP     &kp RIGHT        &kp F9                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &OO              &trans
+&kp LC(F)     &kp LG(NUMBER_1)  &kp LC(C)  &kp LC(V)        &kp LC(APOS)              &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COLON        &kp SEMI
+&trans        &trans            &trans     &lt 4 BACKSPACE  &trans        &trans      &lt 5 ENTER      &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -218,10 +204,10 @@ mb1_exit_aml: mb1_exit_aml {
 
         layer_2 {
             bindings = <
-&kp JP_AT  &kp JP_UNDERSCORE  &kp EXCLAMATION    &kp QUESTION          &kp LS(DOLLAR)                     &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&kp PERCENT  &kp JP_AMPERSAND   &kp HASH           &kp JP_LPAREN  &kp JP_RPAREN              &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&kp JP_TILDE    &kp JP_QUOTE         &kp JP_DQUOTE  &kp JP_LBRACKET      &kp JP_RBRACKET                  &kp F11  &kp F12  &kp JP_COLON  &trans  &trans
-&trans       &trans          &trans             &trans                &trans                 &trans      &trans   &trans   &trans  &trans  &trans
+&kp JP_AT     &kp JP_UNDERSCORE  &kp EXCLAMATION  &kp QUESTION     &kp LS(DOLLAR)               &kp F1   &kp F2   &kp F3        &kp F4  &kp F5
+&kp PERCENT   &kp JP_AMPERSAND   &kp HASH         &kp JP_LPAREN    &kp JP_RPAREN                &kp F6   &kp F7   &kp F8        &kp F9  &kp F10
+&kp JP_TILDE  &kp JP_QUOTE       &kp JP_DQUOTE    &kp JP_LBRACKET  &kp JP_RBRACKET              &kp F11  &kp F12  &kp JP_COLON  &trans  &trans
+&trans        &trans             &trans           &trans           &trans           &trans      &trans   &trans   &trans        &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -229,10 +215,10 @@ mb1_exit_aml: mb1_exit_aml {
 
         layer_3 {
             bindings = <
-&sum            &kp PSCRN  &trans  &kp PAGE_UP    &kp HOME              &kp JP_CARET  &kp JP_BACKQUOTE  &trans  &trans  &trans
-&trans          &trans     &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN   &kp GREATER_THAN   &trans  &trans  &trans
-&kp KP_NUMLOCK  &trans     &trans  &trans         &trans                &kp JP_LBRACE  &kp JP_RBRACE    &trans  &trans  &trans
-&trans          &trans     &trans  &trans         &trans    &trans      &trans          &trans             &trans  &trans  &trans
+&sum            &kp PSCRN  &trans  &kp PAGE_UP    &kp HOME              &kp JP_CARET   &kp JP_BACKQUOTE  &trans  &trans  &trans
+&trans          &trans     &trans  &kp PAGE_DOWN  &kp END               &kp LESS_THAN  &kp GREATER_THAN  &trans  &trans  &trans
+&kp KP_NUMLOCK  &trans     &trans  &trans         &trans                &kp JP_LBRACE  &kp JP_RBRACE     &trans  &trans  &trans
+&trans          &trans     &trans  &trans         &trans    &trans      &trans         &trans            &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -262,10 +248,10 @@ mb1_exit_aml: mb1_exit_aml {
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &mb1_exit_aml  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans         &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
