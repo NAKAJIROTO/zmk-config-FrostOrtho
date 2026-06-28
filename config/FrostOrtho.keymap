@@ -94,12 +94,12 @@
 
         MBB1 {
             bindings = <&mkp LCLK>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
         };
 
         MBB2 {
             bindings = <&mkp MB2>;
-            key-positions = <27 28>;
+            key-positions = <17 18>;
         };
     };
 
