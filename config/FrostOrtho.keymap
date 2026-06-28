@@ -61,7 +61,7 @@
         };
 
         KANACOMBO {
-            bindings = <&kp JP_HANZEN>;
+            bindings = <&kp A>;
             key-positions = <3 4>;
         };
 
