@@ -93,12 +93,12 @@
         };
 
         CAPS1 {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&kp A>;
             key-positions = <13 14>;
         };
 
         KANAKANA {
-            bindings = <&kp A>;
+            bindings = <&kp JP_HANZEN >;
             key-positions = <3 4>;
         };
     };
