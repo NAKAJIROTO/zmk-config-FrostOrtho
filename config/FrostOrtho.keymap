@@ -60,13 +60,6 @@
             key-positions = <16 7>;
         };
 
-
-
-        CAPS1 {
-            bindings = <&kp CAPS>;
-            key-positions = <13 14>;
-        };
-
         MO1 {
             bindings = <&tog 1>;
             key-positions = <5 6>;
