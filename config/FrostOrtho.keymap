@@ -98,7 +98,7 @@
         };
 
         KANACOM {
-            bindings = <&kp A>;
+            bindings = <&kp JP_HANZEN>;
             key-positions = <3 4>;
         };
     };
