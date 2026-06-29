@@ -93,11 +93,14 @@
         };
 
         CAPS1 {
-            bindings = <&kp CAPS>;
+            bindings = <&kp CAPSLOCK>;
             key-positions = <13 14>;
         };
 
-
+        KANAKANA {
+            bindings = <&kp A>;
+            key-positions = <3 4>;
+        };
     };
 
     macros {
