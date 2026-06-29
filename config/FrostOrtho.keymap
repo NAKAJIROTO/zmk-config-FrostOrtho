@@ -98,7 +98,7 @@
         };
 
         KANAKANA {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&kp JP_HANZEN>;
             key-positions = <3 4>;
         };
     };
