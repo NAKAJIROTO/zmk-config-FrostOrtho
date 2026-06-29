@@ -98,7 +98,7 @@
         };
 
         KANAKANA {
-            bindings = <&kp LA(SPACE)>;
+            bindings = <&kp JP_KANA>;
             key-positions = <3 4>;
         };
     };
