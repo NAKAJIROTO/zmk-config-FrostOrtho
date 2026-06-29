@@ -27,7 +27,7 @@
 #define JP_RBRACE       PIPE              // }
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
-#define JP_HANZEN       C_GRAVE             // 半角/全角
+#define JP_HANZEN       GRAVE             // 半角/全角
 #define ZMK_MOUSE_POINTING_SCRL_VAL 100
 #define MOUSE 6
 
@@ -98,7 +98,7 @@
         };
 
         KANAKANA {
-            bindings = <&kp JP_HANZEN >;
+            bindings = <&kp GRAVE>;
             key-positions = <3 4>;
         };
     };
