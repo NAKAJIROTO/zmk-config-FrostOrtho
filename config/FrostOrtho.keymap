@@ -98,7 +98,7 @@
         };
 
         KANAKANA {
-    bindings = <&kp JP_HANZEN>;
+    bindings = <&alt_shift>;
     key-positions = <3 4>;
 };
     };
