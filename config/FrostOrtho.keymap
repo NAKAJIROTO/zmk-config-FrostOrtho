@@ -93,7 +93,7 @@
         };
 
         CAPS1 {
-            bindings = <&kp CAPSM>;
+            bindings = <&CAPSM>;
             key-positions = <13 14>;
         };
 
