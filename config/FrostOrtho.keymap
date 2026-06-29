@@ -93,7 +93,7 @@
         };
 
         CAPS1 {
-            bindings = <&kp A>;
+            bindings = <&kp CAPSM>;
             key-positions = <13 14>;
         };
 
@@ -139,6 +139,13 @@
 
             label = "MB1_EXIT_AML";
         };
+
+CAPSM: capsm {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LS(CAPS)>;
+};
+
     };
 
     behaviors {
