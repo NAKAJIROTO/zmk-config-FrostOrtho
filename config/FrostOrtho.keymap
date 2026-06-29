@@ -98,7 +98,7 @@
         };
 
         KANAKANA {
-           bindings = <&kp LA(LSHIFT)>;
+        bindings = <&kp LC(SPACE)>;
     key-positions = <3 4>;
 };
     };
